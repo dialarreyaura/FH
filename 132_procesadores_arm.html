@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.3.2. Procesadores ARM | Tema 1 FH </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 1 FH</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 1. Arquitectura de ordenadores. Estructura funcional</a></li>
+   <li><a href="11_introduccin.html" class="no-ch">1.1. Introducción</a></li>
+   <li><a href="12_arquitectura_de_un_ordenador_elementos_funcionales_y_subsistemas.html" class="daddy">1.2. Arquitectura de un ordenador. Elementos funcionales y subsistemas</a>
+   <ul class="other-section">
+      <li><a href="121_la_memoria.html" class="no-ch">1.2.1. La memoria</a></li>
+      <li><a href="122_subsistema_de_entradasalida.html" class="no-ch">1.2.2. Subsistema de entrada/salida</a></li>
+      <li><a href="123_la_unidad_aritmticolgica_alu.html" class="no-ch">1.2.3. La Unidad Aritmético-Lógica (ALU)</a></li>
+      <li><a href="124_la_unidad_de_control.html" class="no-ch">1.2.4. La Unidad de Control</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="13_los_soc_procesadores_mviles.html" class="current-page-parent daddy">1.3. Los SoC. Procesadores móviles</a>
+   <ul>
+      <li><a href="131_procesadores_usados_en_los_soc.html" class="no-ch">1.3.1. Procesadores usados en los SoC</a></li>
+      <li id="active"><a href="132_procesadores_arm.html" class="active daddy">1.3.2. Procesadores ARM</a>
+      <ul>
+         <li><a href="1321_evolucin_de_los_procesadores_arm.html" class="no-ch">1.3.2.1. Evolución de los Procesadores ARM</a></li>
+         <li><a href="1322_aplicaciones_de_los_procesadores_arm.html" class="no-ch">1.3.2.2. Aplicaciones de los Procesadores ARM</a></li>
+         <li><a href="1323_ventajas_y_desventajas_de_los_procesadores_arm.html" class="no-ch">1.3.2.3. Ventajas y Desventajas de los Procesadores ARM</a></li>
+         <li><a href="1324_futuro_de_arm_en_la_computacin.html" class="no-ch">1.3.2.4. Futuro de ARM en la Computación</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="14_nuevas_arquitecturas_de_los_microprocesadores_chips_neuromrficos.html" class="daddy">1.4. Nuevas arquitecturas de los microprocesadores: chips neuromórficos.</a>
+   <ul class="other-section">
+      <li><a href="141_arquitectura_y_funcionalidad.html" class="no-ch">1.4.1. Arquitectura y Funcionalidad</a></li>
+   </ul>
+   </li>
+   <li><a href="15_inteligencia_artificial_en_los_procesadores.html" class="daddy">1.5. Inteligencia artificial en los procesadores</a>
+   <ul class="other-section">
+      <li><a href="151_procesadores_con_capacidades_de_ia.html" class="daddy">1.5.1. Procesadores con Capacidades de IA</a>
+      <ul class="other-section">
+         <li><a href="1511_diferencias_clave_entre_npu_y_tpu.html" class="no-ch">1.5.1.1. Diferencias clave entre NPU y TPU</a></li>
+      </ul>
+      </li>
+      <li><a href="152_implementaciones_de_ia_en_los_procesadores.html" class="no-ch">1.5.2. Implementaciones de IA en los Procesadores</a></li>
+      <li><a href="153_tendencias_futuras_en_inteligencia_artificial_en_procesadores.html" class="no-ch">1.5.3. Tendencias Futuras en Inteligencia Artificial en Procesadores</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="131_procesadores_usados_en_los_soc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="1321_evolucin_de_los_procesadores_arm.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.3.2. Procesadores ARM</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id38">
+<div class="iDevice emphasis0" >
+<div id="ta38_134_2" class="block iDevice_content">
+<div class="exe-text"><p>Los procesadores ARM (Advanced RISC Machine) son una de las arquitecturas de CPU más importantes y populares del mundo, diseñados inicialmente para sistemas de baja potencia. En la actualidad, son omnipresentes en dispositivos móviles, embebidos y, cada vez más, en servidores y sistemas de alto rendimiento. ARM se distingue por su arquitectura de conjunto reducido de instrucciones (RISC, por sus siglas en inglés), lo que permite un diseño eficiente en términos de energía y simplicidad. Este tipo de procesadores ha tenido un impacto significativo en la industria de la informática, marcando una diferencia considerable con respecto a las arquitecturas tradicionales, como x86 de Intel y AMD.</p>
+<p>Los procesadores ARM no siguen estrictamente la arquitectura de Von Neumann, sino que en su mayoría implementan una variante conocida como arquitectura Harvard modificada.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id39">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Diferencias entre Von Neumann y Harvard</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_135_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>1. Arquitectura de Von Neumann:</strong><br />La arquitectura de Von Neumann, que es utilizada por muchos procesadores convencionales, como los de la familia x86, se caracteriza por lo siguiente:</p>
+<ul>
+<li><strong>Memoria compartida:</strong> Tanto las instrucciones como los datos se almacenan en la misma memoria.</li>
+<li><strong>Acceso secuencial:</strong> La CPU accede a las instrucciones y datos a través de un único bus de datos, lo que puede llevar a un problema conocido como "cuello de botella de Von Neumann", ya que el procesador solo puede acceder a una cosa a la vez (o la instrucción o el dato).</li>
+</ul>
+<p><strong>2. Arquitectura Harvard:</strong><br />En la arquitectura Harvard pura:</p>
+<ul>
+<li><strong>Memorias separadas:</strong> Las instrucciones y los datos se almacenan en memorias físicamente separadas, con buses de datos independientes. Esto permite que el procesador acceda simultáneamente tanto a las instrucciones como a los datos, aumentando la eficiencia.</li>
+</ul>
+<p>Los procesadores ARM usan una arquitectura Harvard modificada, que toma las ventajas del modelo Harvard (memorias separadas para instrucciones y datos) pero las combina con algunas características de Von Neumann, como compartir espacio de direcciones en algunos casos para simplificar el diseño y hacer posible la coherencia de cachés.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Qué hace ARM?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_136_2" class="block iDevice_content">
+<div class="exe-text"><p>La mayoría de los procesadores ARM utilizan esta arquitectura Harvard modificada, lo que les permite tener una alta eficiencia en la ejecución de programas. Los procesadores ARM tienen:</p>
+<ul>
+<li><strong>Cachés separadas para instrucciones y datos</strong>, lo que permite que el procesador lea las instrucciones mientras procesa los datos, sin interferencias.</li>
+<li><strong>Pipeline avanzado:</strong> La ejecución de instrucciones en paralelo es más eficiente al combinar el modelo Harvard con técnicas modernas de diseño de CPU, como superscalaridad y pipelining, que ayudan a minimizar los cuellos de botella.</li>
+</ul>
+<p></p>
+<p><img src="ARMSoCBlockDiagram.svg.png" width="460" height="552" alt="Arquitectura ARM" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<p>Beneficios:</p>
+<ul>
+<li><strong>Mayor rendimiento:</strong> Al permitir acceso simultáneo a datos e instrucciones, la arquitectura Harvard modificada mejora el rendimiento y reduce el tiempo de espera.</li>
+<li><strong>Eficiencia energética:</strong> ARM optimiza el consumo energético, lo que es esencial en dispositivos móviles, gracias a la reducción de las transferencias de datos innecesarias entre la memoria y el procesador.</li>
+</ul>
+<p>En resumen, mientras que Von Neumann ofrece un diseño simple pero menos eficiente en términos de paralelismo y acceso a la memoria, ARM opta por la arquitectura Harvard modificada para mejorar la velocidad y la eficiencia energética, lo que resulta especialmente útil en dispositivos que requieren un bajo consumo de energía.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Arquitectura RISC</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_137_2" class="block iDevice_content">
+<div class="exe-text"><p>Los procesadores ARM se basan en la arquitectura RISC, la cual está diseñada para ejecutar un número reducido de instrucciones de manera extremadamente eficiente. A diferencia de las arquitecturas <strong>CISC</strong> (Complex Instruction Set Computing), donde las instrucciones pueden ser más complejas y requerir múltiples ciclos de reloj, la arquitectura RISC favorece instrucciones simples que se ejecutan en un solo ciclo de reloj.</p>
+<p>Principios básicos de RISC que se aplican a ARM:</p>
+<ul>
+<li><strong>Instrucciones simples y rápidas:</strong> ARM utiliza un conjunto de instrucciones pequeñas y rápidas que permiten realizar operaciones fundamentales.</li>
+<li><strong>Pipeline:</strong> ARM utiliza técnicas avanzadas de pipeline, lo que permite que varias instrucciones se ejecuten de manera superpuesta, incrementando el rendimiento.</li>
+<li><strong>Uso eficiente de registros:</strong> La mayoría de las operaciones en ARM se realizan en registros, lo que minimiza el acceso a la memoria, haciendo el procesamiento más rápido y eficiente.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Conjunto de Instrucciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta42_138_2" class="block iDevice_content">
+<div class="exe-text"><p>El conjunto de instrucciones de ARM está diseñado para ser simple y eficiente. Entre sus características clave destacan:</p>
+<ul>
+<li><strong>Instrucciones de longitud fija:</strong> Todas las instrucciones tienen un tamaño de 32 bits en los procesadores ARM tradicionales, lo que facilita la decodificación y ejecución eficiente. ARM también ha desarrollado el conjunto de instrucciones <strong>Thumb</strong>, que utiliza instrucciones de 16 bits para mejorar la eficiencia en aplicaciones donde el ahorro de memoria es crucial.</li>
+<li><strong>Condicionalidad de instrucciones:</strong> ARM permite que cada instrucción tenga una condición de ejecución, lo que significa que puede saltarse una instrucción si no se cumple una condición previa. Esto evita la necesidad de saltos frecuentes en el código, mejorando el flujo de ejecución.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Modos de Operación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_139_2" class="block iDevice_content">
+<div class="exe-text"><p>Los procesadores ARM tienen varios modos de operación que permiten gestionar distintas situaciones:</p>
+<ul>
+<li><strong>Modo Usuario:</strong> Es el modo de operación básico donde se ejecutan las aplicaciones del usuario.</li>
+<li><strong>Modos Privilegiados:</strong> Incluyen modos como el modo Supervisor, el modo de interrupciones rápidas (FIQ) y el modo de interrupciones normales (IRQ), que son utilizados para manejar excepciones y ejecutar el código del sistema operativo.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="131_procesadores_usados_en_los_soc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="1321_evolucin_de_los_procesadores_arm.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

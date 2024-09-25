@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.2. Arquitectura de un ordenador. Elementos funcionales y subsistemas | Tema 1 FH </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 1 FH</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 1. Arquitectura de ordenadores. Estructura funcional</a></li>
+   <li><a href="11_introduccin.html" class="no-ch">1.1. Introducción</a></li>
+   <li id="active"><a href="12_arquitectura_de_un_ordenador_elementos_funcionales_y_subsistemas.html" class="active daddy">1.2. Arquitectura de un ordenador. Elementos funcionales y subsistemas</a>
+   <ul>
+      <li><a href="121_la_memoria.html" class="no-ch">1.2.1. La memoria</a></li>
+      <li><a href="122_subsistema_de_entradasalida.html" class="no-ch">1.2.2. Subsistema de entrada/salida</a></li>
+      <li><a href="123_la_unidad_aritmticolgica_alu.html" class="no-ch">1.2.3. La Unidad Aritmético-Lógica (ALU)</a></li>
+      <li><a href="124_la_unidad_de_control.html" class="no-ch">1.2.4. La Unidad de Control</a></li>
+   </ul>
+   </li>
+   <li><a href="13_los_soc_procesadores_mviles.html" class="daddy">1.3. Los SoC. Procesadores móviles</a>
+   <ul class="other-section">
+      <li><a href="131_procesadores_usados_en_los_soc.html" class="no-ch">1.3.1. Procesadores usados en los SoC</a></li>
+      <li><a href="132_procesadores_arm.html" class="daddy">1.3.2. Procesadores ARM</a>
+      <ul class="other-section">
+         <li><a href="1321_evolucin_de_los_procesadores_arm.html" class="no-ch">1.3.2.1. Evolución de los Procesadores ARM</a></li>
+         <li><a href="1322_aplicaciones_de_los_procesadores_arm.html" class="no-ch">1.3.2.2. Aplicaciones de los Procesadores ARM</a></li>
+         <li><a href="1323_ventajas_y_desventajas_de_los_procesadores_arm.html" class="no-ch">1.3.2.3. Ventajas y Desventajas de los Procesadores ARM</a></li>
+         <li><a href="1324_futuro_de_arm_en_la_computacin.html" class="no-ch">1.3.2.4. Futuro de ARM en la Computación</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="14_nuevas_arquitecturas_de_los_microprocesadores_chips_neuromrficos.html" class="daddy">1.4. Nuevas arquitecturas de los microprocesadores: chips neuromórficos.</a>
+   <ul class="other-section">
+      <li><a href="141_arquitectura_y_funcionalidad.html" class="no-ch">1.4.1. Arquitectura y Funcionalidad</a></li>
+   </ul>
+   </li>
+   <li><a href="15_inteligencia_artificial_en_los_procesadores.html" class="daddy">1.5. Inteligencia artificial en los procesadores</a>
+   <ul class="other-section">
+      <li><a href="151_procesadores_con_capacidades_de_ia.html" class="daddy">1.5.1. Procesadores con Capacidades de IA</a>
+      <ul class="other-section">
+         <li><a href="1511_diferencias_clave_entre_npu_y_tpu.html" class="no-ch">1.5.1.1. Diferencias clave entre NPU y TPU</a></li>
+      </ul>
+      </li>
+      <li><a href="152_implementaciones_de_ia_en_los_procesadores.html" class="no-ch">1.5.2. Implementaciones de IA en los Procesadores</a></li>
+      <li><a href="153_tendencias_futuras_en_inteligencia_artificial_en_procesadores.html" class="no-ch">1.5.3. Tendencias Futuras en Inteligencia Artificial en Procesadores</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="11_introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="121_la_memoria.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.2. Arquitectura de un ordenador. Elementos funcionales y subsistemas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id1">
+<div class="iDevice emphasis0" >
+<div id="ta1_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Según la tecnología clásica, las distintas unidades de las computadoras estarán interconectadas entre sí, siendo la responsable del control del sistema una unidad llamada unidad de control. Desde entonces, esta arquitectura ha sido seguida, con modificaciones, claro está, por todos los fabricantes de hardware.<br />Un equipo o sistema informático, según <strong>Von Neumann</strong>, está formado por unos periféricos de entrada (teclado, ratón, touchpad, etc.), una CPU, que es donde se procesa la información y puede considerarse el cerebro del sistema, y unos periféricos de salida<br />(impresora, pantalla, etc.).</p>
+<p><img src="imagen.png" width="960" height="171" alt="esquema sistema" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="imagen.5.png" width="869" height="640" alt="Von Neumann" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice em_iDevice_debesconocerfpd" id="id3">
+<div class="iDevice emphasis_debesconocerfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Debes conocer</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_145" class="block iDevice_content">
+<p>Un periférico puede actuar como periférico de entrada y también de salida como es el caso de las una pantallas táctiles.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id4">
+<div class="iDevice emphasis0" >
+<div id="ta4_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Como puede observarse, en la figura el flujo de información es sencillo: los periféricos de entrada envían información a la CPU, la cual la procesa y envía el resultado a los periféricos de salida.</p>
+<p><img src="imagen.1.png" width="645" height="561" alt="CPU" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>No obstante, la CPU (Central Process Unit, en inglés, o unidad central de proceso, en castellano) también está compuesta por una memoria (en la cual residen los datos y los programas) y un procesador, que irá ejecutando las órdenes de los programas y la información de los periféricos de entrada para poder generar la<br />salida esperada.<br />El procesador, a su vez, está compuesto por una unidad aritmética y una unidad de control. La unidad aritmética es un hardware especializado en realizar operaciones matemáticas (aritméticas y lógicas), mientras que la unidad de control es verdadero “cerebro” del sistema.</p>
+<p>Con el paso del tiempo, el procesador y la memoria han evolucionado mucho debido a la necesidad de procesamiento.<br />Actualmente, los procesadores tienen una velocidad asombrosa y las memorias una capacidad ingente. Estos componentes se han especializado de una forma increíble, de tal manera que un microprocesador puede llegar a albergar miles de millones de transistores.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice em_iDevice_parasabermasfpd" id="id5">
+<div class="iDevice emphasis_parasabermasfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Para saber más</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_144" class="block iDevice_content">
+<p style="text-align: center;"><strong>Choque de arquitecturas: CISC frente a RISC</strong></p>
+<p style="text-align: left;"> <br />Al principio, cuando los técnicos desarrollaban los microprocesadores, no les importaba crear un grupo muy grande de instrucciones, de las cuales, muchas eran complejas y muy potentes. Si necesitaban alguna instrucción, la creaban. Muchas de esas instrucciones se podían hacer con instrucciones más sencillas, pero los técnicos no tenían ningún complejo en crearla, puesto que pensaban que así el sistema podía ser más potente. Este tipo de microprocesadores se denominaba CISC (Complex Instruction Set Computer). A medida que iban evolucionando los equipos, el conjunto de instrucciones era más grande y también la unidad de control. Como la memoria era mucho más lenta que la unidad de control, el tiempo que tardaba el sistema en descodificar la instrucción y preparar las operaciones no era problema. Todo se podía hacer en un solo ciclo de reloj, por lo que no se plantearon cambiar esta arquitectura.<br />Conforme las prestaciones de la memoria fueron mejorando, la unidad de control ya no tenía que esperar a la memoria, sino todo lo contrario. Las unidades de control tan complejas y el gran número de instrucciones hacían que las CPU no fuesen todo lo rápidas que pretendían los ingenieros. De ese modo nació la arquitectura RISC (Reduced Instruction Set Computer), la cual tiene un juego de instrucciones muy reducido, pero una unidad de control muy rápida que puede ejecutar una instrucción en un solo ciclo de reloj.<br />Actualmente se ha optado por la arquitectura RISC frente a la CISC. Aunque una instrucción CISC puede transformarse en varias RISC, la velocidad total del sistema es mucho mayor en RISC, porque la mayoría de las instrucciones que se ejecutan en una CPU son simples y no complejas.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id6">
+<div class="iDevice emphasis0" >
+<div id="ta6_126_2" class="block iDevice_content">
+<div class="exe-text"><p>La memoria que alberga la CPU está formada por una serie de celdillas o biestables (nombre dado porque solamente tienen dos posibles estados); en cada una se almacenará un bit.<br />Generalmente, se accede a un conjunto de ellas mediante una dirección. Los accesos a dichas celdillas podrán ser en modo lectura y escritura.</p>
+<p><img src="imagen.2.png" width="1033" height="516" alt="celdillas CPU" /></p>
+<p>Las celdillas son el elemento básico de información, llamado bit. Estos bits pueden tener dos valores posibles, 1 y 0 (ausencia o presencia de energía).<br />Estas celdillas sirven para almacenar los datos e instrucciones de la máquina. Y estas instrucciones se agrupan en lo que se denominan programas. Los programas son un conjunto de instrucciones que se almacenan de forma secuencial y cuyas instrucciones se van ejecutando una detrás de otra.<br />El sistema irá ejecutando estos programas, los cuales están situados en la memoria principal. Los datos de los programas, como se ha dicho también, residen en la memoria principal y el sistema tendrá que extraer las instrucciones, interpretarlas y acceder cuando sea necesario a los datos, ya sea en modo escritura o lectura.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="11_introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="121_la_memoria.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

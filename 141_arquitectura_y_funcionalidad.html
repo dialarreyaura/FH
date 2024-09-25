@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.4.1. Arquitectura y Funcionalidad | Tema 1 FH </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 1 FH</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 1. Arquitectura de ordenadores. Estructura funcional</a></li>
+   <li><a href="11_introduccin.html" class="no-ch">1.1. Introducción</a></li>
+   <li><a href="12_arquitectura_de_un_ordenador_elementos_funcionales_y_subsistemas.html" class="daddy">1.2. Arquitectura de un ordenador. Elementos funcionales y subsistemas</a>
+   <ul class="other-section">
+      <li><a href="121_la_memoria.html" class="no-ch">1.2.1. La memoria</a></li>
+      <li><a href="122_subsistema_de_entradasalida.html" class="no-ch">1.2.2. Subsistema de entrada/salida</a></li>
+      <li><a href="123_la_unidad_aritmticolgica_alu.html" class="no-ch">1.2.3. La Unidad Aritmético-Lógica (ALU)</a></li>
+      <li><a href="124_la_unidad_de_control.html" class="no-ch">1.2.4. La Unidad de Control</a></li>
+   </ul>
+   </li>
+   <li><a href="13_los_soc_procesadores_mviles.html" class="daddy">1.3. Los SoC. Procesadores móviles</a>
+   <ul class="other-section">
+      <li><a href="131_procesadores_usados_en_los_soc.html" class="no-ch">1.3.1. Procesadores usados en los SoC</a></li>
+      <li><a href="132_procesadores_arm.html" class="daddy">1.3.2. Procesadores ARM</a>
+      <ul class="other-section">
+         <li><a href="1321_evolucin_de_los_procesadores_arm.html" class="no-ch">1.3.2.1. Evolución de los Procesadores ARM</a></li>
+         <li><a href="1322_aplicaciones_de_los_procesadores_arm.html" class="no-ch">1.3.2.2. Aplicaciones de los Procesadores ARM</a></li>
+         <li><a href="1323_ventajas_y_desventajas_de_los_procesadores_arm.html" class="no-ch">1.3.2.3. Ventajas y Desventajas de los Procesadores ARM</a></li>
+         <li><a href="1324_futuro_de_arm_en_la_computacin.html" class="no-ch">1.3.2.4. Futuro de ARM en la Computación</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="14_nuevas_arquitecturas_de_los_microprocesadores_chips_neuromrficos.html" class="current-page-parent daddy">1.4. Nuevas arquitecturas de los microprocesadores: chips neuromórficos.</a>
+   <ul>
+      <li id="active"><a href="141_arquitectura_y_funcionalidad.html" class="active no-ch">1.4.1. Arquitectura y Funcionalidad</a></li>
+   </ul>
+   </li>
+   <li><a href="15_inteligencia_artificial_en_los_procesadores.html" class="daddy">1.5. Inteligencia artificial en los procesadores</a>
+   <ul class="other-section">
+      <li><a href="151_procesadores_con_capacidades_de_ia.html" class="daddy">1.5.1. Procesadores con Capacidades de IA</a>
+      <ul class="other-section">
+         <li><a href="1511_diferencias_clave_entre_npu_y_tpu.html" class="no-ch">1.5.1.1. Diferencias clave entre NPU y TPU</a></li>
+      </ul>
+      </li>
+      <li><a href="152_implementaciones_de_ia_en_los_procesadores.html" class="no-ch">1.5.2. Implementaciones de IA en los Procesadores</a></li>
+      <li><a href="153_tendencias_futuras_en_inteligencia_artificial_en_procesadores.html" class="no-ch">1.5.3. Tendencias Futuras en Inteligencia Artificial en Procesadores</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="14_nuevas_arquitecturas_de_los_microprocesadores_chips_neuromrficos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="15_inteligencia_artificial_en_los_procesadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.4.1. Arquitectura y Funcionalidad</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id26">
+<div class="iDevice emphasis0" >
+<div id="ta26_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Los chips neuromórficos representan una innovación radical en el diseño de microprocesadores, inspirados en la estructura y el funcionamiento del cerebro humano. A diferencia de los procesadores tradicionales, que siguen la arquitectura de Von Neumann, los chips neuromórficos están diseñados para procesar información de manera más eficiente, emulando las redes neuronales biológicas. Su objetivo principal es proporcionar un procesamiento altamente eficiente en términos de energía, velocidad y paralelismo, que resulta particularmente útil en aplicaciones de inteligencia artificial (IA) y aprendizaje automático.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id27">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Qué son los Chips Neuromórficos?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta27_123_2" class="block iDevice_content">
+<div class="exe-text"><p>El término "neuromórfico" fue acuñado en la década de 1980 por<strong> Carver Mead</strong>, un pionero en la microelectrónica y la computación. Se refiere a hardware que imita la organización y el procesamiento del cerebro a través de redes neuronales artificiales y la comunicación asincrónica entre "neuronas" digitales. Estos chips están diseñados para realizar operaciones cognitivas como el reconocimiento de patrones, la toma de decisiones y el aprendizaje autónomo con una eficiencia energética mucho mayor que los procesadores tradicionales.</p>
+<p>La principal característica de los chips neuromórficos es que son capaces de realizar procesamiento en paralelo, a diferencia de los procesadores tradicionales que siguen un enfoque secuencial. Además, estos chips integran el procesamiento y el almacenamiento de manera simultánea, al igual que el cerebro, lo que elimina la necesidad de transferir datos entre la memoria y la CPU constantemente, como ocurre en los sistemas convencionales.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id28">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Arquitectura de un Chip Neuromórfico</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta28_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Los chips neuromórficos están diseñados con una arquitectura basada en neuronas y sinapsis artificiales. A nivel básico, una red neuromórfica está compuesta por:</p>
+<ul>
+<li><strong>Neuronas:</strong> Unidades de procesamiento que reciben señales de entrada, las procesan y envían una señal de salida basada en el tipo de estímulo recibido, de manera similar a cómo las neuronas biológicas envían impulsos eléctricos a otras neuronas.</li>
+<li><strong>Sinapsis:</strong> Conexiones entre neuronas que modulan la intensidad de las señales entre las neuronas, emulando el comportamiento de las sinapsis en el cerebro biológico. En un chip neuromórfico, estas sinapsis pueden ser adaptativas, lo que les permite "aprender" ajustando sus pesos sinápticos.</li>
+<li><strong>Memoria distribuida:</strong> A diferencia de los procesadores tradicionales, en los que la memoria y el procesamiento están físicamente separados, en los chips neuromórficos, la memoria está distribuida a lo largo de la red neuronal. Cada sinapsis almacena la información localmente, lo que permite un acceso mucho más rápido y eficiente a los datos.</li>
+<li><strong>Procesamiento asincrónico:</strong> Los chips neuromórficos no dependen de un reloj central para sincronizar el procesamiento, como en las arquitecturas tradicionales. En su lugar, las señales se envían y procesan de manera asincrónica, lo que contribuye a un ahorro significativo de energía.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id29">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Funcionamiento</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta29_125_2" class="block iDevice_content">
+<div class="exe-text"><p>El funcionamiento de los chips neuromórficos se basa en el principio de las redes neuronales artificiales (ANN), aunque a nivel de hardware. Estas redes están inspiradas en la forma en que el cerebro humano aprende y toma decisiones. Cada neurona artificial recibe señales de entrada de múltiples neuronas y, con base en los pesos sinápticos y una función de activación, decide si dispara una señal de salida.</p>
+<ul>
+<li><strong>Procesamiento paralelo:</strong> Como las neuronas funcionan de manera independiente y en paralelo, los chips neuromórficos pueden manejar múltiples flujos de información simultáneamente, lo que es esencial para tareas que requieren gran cantidad de datos en tiempo real, como el reconocimiento de voz o imágenes.</li>
+<li><strong>Plástico sináptico:</strong> La plasticidad sináptica es la capacidad de las sinapsis para cambiar su peso en respuesta a la experiencia. Los chips neuromórficos utilizan principios similares para "aprender" de los datos, ajustando los pesos sinápticos a medida que reciben más información.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id30">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Comparación con la Arquitectura Tradicional de los Procesadores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta30_126_2" class="block iDevice_content">
+<div class="exe-text"><p>Los chips neuromórficos se diferencian fundamentalmente de los procesadores tradicionales en varios aspectos clave:</p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%; background-color: #cde8fa; text-align: center;"><strong>Característica</strong></td>
+<td style="width: 33.3333%; background-color: #cde8fa; text-align: center;"><strong>Procesadores Convencionales (Von Neumann)</strong></td>
+<td style="width: 33.3333%; background-color: #cde8fa; text-align: center;"><strong> </strong><br /><strong>Chips Neuromórficos</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>Modelo de Procesamiento</strong></td>
+<td style="width: 33.3333%;">Secuencial, con unidad central de control</td>
+<td style="width: 33.3333%;">Paralelo, con neuronas autónomas</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>Memoria y Procesamiento</strong></td>
+<td style="width: 33.3333%;">Separados (requiere transferencia constante)</td>
+<td style="width: 33.3333%;">Integrados (memoria distribuida)</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>Sincronización</strong></td>
+<td style="width: 33.3333%;">Basada en reloj central</td>
+<td style="width: 33.3333%;">Asincrónico (eventos neuronales)</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>Eficiencia Energética</strong></td>
+<td style="width: 33.3333%;">Relativamente baja debido al consumo constante</td>
+<td style="width: 33.3333%;">Altamente eficiente</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>Aplicaciones Principales</strong></td>
+<td style="width: 33.3333%;">Cómputo general, juegos, gráficos</td>
+<td style="width: 33.3333%;">IA, aprendizaje automático, robótica</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>Capacidad de Aprendizaje</strong></td>
+<td style="width: 33.3333%;">Limitada a nivel de software</td>
+<td style="width: 33.3333%;">Integrada a nivel de hardware</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id31">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Aplicaciones de los Chips Neuromórficos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta31_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Los chips neuromórficos tienen aplicaciones en diversas áreas que requieren procesamiento de grandes volúmenes de datos en tiempo real y con baja latencia. Algunas de las aplicaciones más relevantes son:</p>
+<ul>
+<li><strong>Reconocimiento de Patrones:</strong> Los chips neuromórficos son muy eficaces para el reconocimiento de patrones en imágenes, sonidos y otros tipos de datos, debido a su capacidad para procesar información de manera paralela. Esto tiene aplicaciones en sistemas de visión por computadora, como los vehículos autónomos y los sistemas de seguridad.</li>
+<li><strong>Robótica Autónoma:</strong> En la robótica, los chips neuromórficos permiten un procesamiento más eficiente y adaptable para tareas de navegación y toma de decisiones en tiempo real, lo que es esencial para los robots que interactúan con ambientes dinámicos.</li>
+<li><strong>Inteligencia Artificial y Aprendizaje Profundo:</strong> Debido a su capacidad para realizar cálculos masivamente paralelos y ajustar los pesos sinápticos, estos chips son especialmente útiles en redes neuronales profundas, utilizadas en IA para tareas como procesamiento de lenguaje natural, traducción automática y diagnóstico médico asistido por IA.</li>
+<li><strong>Sistemas de Prótesis Neurales:</strong> Estos chips también son prometedores para el desarrollo de prótesis neurales avanzadas, ya que permiten una interacción más fluida entre el cerebro humano y dispositivos artificiales, como brazos robóticos controlados por el cerebro.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id32">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos de Chips Neuromórficos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta32_128_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>Loihi (Intel):</strong> Es uno de los chips neuromórficos más avanzados desarrollado por Intel. Cuenta con 128 núcleos de procesamiento neuromórfico y puede simular redes neuronales masivas con millones de neuronas artificiales. Loihi se utiliza principalmente en investigación sobre IA y sistemas autónomos.</li>
+<li><strong>TrueNorth (IBM):</strong> TrueNorth, desarrollado por IBM, es otro chip neuromórfico destacado. Este procesador tiene 4096 núcleos, cada uno de los cuales simula 256 neuronas, alcanzando un total de más de un millón de neuronas simuladas. Está diseñado para realizar tareas cognitivas con un consumo mínimo de energía.</li>
+<li><strong>SpiNNaker (Universidad de Mánchester):</strong> Es una máquina basada en el procesamiento neuromórfico que utiliza un millón de núcleos ARM para simular grandes redes neuronales. Ha sido utilizada para simular redes neuronales a gran escala en investigaciones de neurociencia.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id33">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Desafíos y Futuro de los Chips Neuromórficos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta33_129_2" class="block iDevice_content">
+<div class="exe-text"><p>A pesar de su potencial, los chips neuromórficos enfrentan varios desafíos:</p>
+<ul>
+<li><strong>Madurez tecnológica:</strong> Aunque los avances en chips neuromórficos han sido impresionantes, su adopción generalizada todavía enfrenta obstáculos. El software para entrenar y operar estos chips está en desarrollo y requiere un enfoque diferente al de los procesadores convencionales.</li>
+<li><strong>Escalabilidad:</strong> Simular un cerebro humano completo en un chip sigue siendo un reto. Aunque las neuronas y sinapsis artificiales pueden replicar algunos aspectos del cerebro, replicar la complejidad del cerebro a gran escala es una tarea compleja.</li>
+<li><strong>Aplicación comercial:</strong> Aunque los chips neuromórficos son prometedores en términos de eficiencia energética y capacidad de procesamiento, todavía deben demostrar su valor frente a tecnologías establecidas en áreas comerciales como los servidores y las estaciones de trabajo de alto rendimiento.</li>
+</ul>
+<p>El futuro de los chips neuromórficos está estrechamente ligado a la evolución de la inteligencia artificial y los sistemas autónomos. Si se logra superar los desafíos actuales, estos chips podrían convertirse en la base de una nueva generación de dispositivos inteligentes y eficientes que emulan el comportamiento del cerebro humano.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="14_nuevas_arquitecturas_de_los_microprocesadores_chips_neuromrficos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="15_inteligencia_artificial_en_los_procesadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

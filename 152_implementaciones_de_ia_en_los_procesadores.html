@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.5.2. Implementaciones de IA en los Procesadores | Tema 1 FH </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 1 FH</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 1. Arquitectura de ordenadores. Estructura funcional</a></li>
+   <li><a href="11_introduccin.html" class="no-ch">1.1. Introducción</a></li>
+   <li><a href="12_arquitectura_de_un_ordenador_elementos_funcionales_y_subsistemas.html" class="daddy">1.2. Arquitectura de un ordenador. Elementos funcionales y subsistemas</a>
+   <ul class="other-section">
+      <li><a href="121_la_memoria.html" class="no-ch">1.2.1. La memoria</a></li>
+      <li><a href="122_subsistema_de_entradasalida.html" class="no-ch">1.2.2. Subsistema de entrada/salida</a></li>
+      <li><a href="123_la_unidad_aritmticolgica_alu.html" class="no-ch">1.2.3. La Unidad Aritmético-Lógica (ALU)</a></li>
+      <li><a href="124_la_unidad_de_control.html" class="no-ch">1.2.4. La Unidad de Control</a></li>
+   </ul>
+   </li>
+   <li><a href="13_los_soc_procesadores_mviles.html" class="daddy">1.3. Los SoC. Procesadores móviles</a>
+   <ul class="other-section">
+      <li><a href="131_procesadores_usados_en_los_soc.html" class="no-ch">1.3.1. Procesadores usados en los SoC</a></li>
+      <li><a href="132_procesadores_arm.html" class="daddy">1.3.2. Procesadores ARM</a>
+      <ul class="other-section">
+         <li><a href="1321_evolucin_de_los_procesadores_arm.html" class="no-ch">1.3.2.1. Evolución de los Procesadores ARM</a></li>
+         <li><a href="1322_aplicaciones_de_los_procesadores_arm.html" class="no-ch">1.3.2.2. Aplicaciones de los Procesadores ARM</a></li>
+         <li><a href="1323_ventajas_y_desventajas_de_los_procesadores_arm.html" class="no-ch">1.3.2.3. Ventajas y Desventajas de los Procesadores ARM</a></li>
+         <li><a href="1324_futuro_de_arm_en_la_computacin.html" class="no-ch">1.3.2.4. Futuro de ARM en la Computación</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="14_nuevas_arquitecturas_de_los_microprocesadores_chips_neuromrficos.html" class="daddy">1.4. Nuevas arquitecturas de los microprocesadores: chips neuromórficos.</a>
+   <ul class="other-section">
+      <li><a href="141_arquitectura_y_funcionalidad.html" class="no-ch">1.4.1. Arquitectura y Funcionalidad</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="15_inteligencia_artificial_en_los_procesadores.html" class="current-page-parent daddy">1.5. Inteligencia artificial en los procesadores</a>
+   <ul>
+      <li><a href="151_procesadores_con_capacidades_de_ia.html" class="daddy">1.5.1. Procesadores con Capacidades de IA</a>
+      <ul class="other-section">
+         <li><a href="1511_diferencias_clave_entre_npu_y_tpu.html" class="no-ch">1.5.1.1. Diferencias clave entre NPU y TPU</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="152_implementaciones_de_ia_en_los_procesadores.html" class="active no-ch">1.5.2. Implementaciones de IA en los Procesadores</a></li>
+      <li><a href="153_tendencias_futuras_en_inteligencia_artificial_en_procesadores.html" class="no-ch">1.5.3. Tendencias Futuras en Inteligencia Artificial en Procesadores</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="1511_diferencias_clave_entre_npu_y_tpu.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="153_tendencias_futuras_en_inteligencia_artificial_en_procesadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.5.2. Implementaciones de IA en los Procesadores</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id59">
+<div class="iDevice emphasis0" >
+<div id="ta59_155_2" class="block iDevice_content">
+<div class="exe-text"><p>Los diferentes usos que tiene la IA podríamos resumirlos en los siguientes:</p>
+<p><strong>1. Inferencia de Modelos de IA en Dispositivos</strong><br />La inferencia es la fase de aplicación práctica de un modelo de IA previamente entrenado. Mientras que el entrenamiento de un modelo de IA generalmente se realiza en centros de datos utilizando potentes GPUs o TPUs, la inferencia (el uso de ese modelo) ocurre en dispositivos finales como teléfonos, autos o cámaras de seguridad.</p>
+<p>Los procesadores con capacidad de IA, como los que incluyen NPUs o TPUs, permiten ejecutar modelos de IA localmente en el dispositivo sin necesidad de conectarse a la nube. Esto reduce la latencia y aumenta la privacidad, ya que los datos no necesitan enviarse a servidores externos para ser procesados.</p>
+<p><strong>Ejemplo:</strong> En un smartphone, el reconocimiento de imágenes en tiempo real (como identificar objetos en una foto o mejorar automáticamente la calidad de la imagen) se realiza mediante la inferencia de modelos de IA en un procesador con capacidad de IA.</p>
+<p><strong>2. Edge AI</strong> (Inteligencia Artificial en el borde)<br />Con el crecimiento del Internet de las Cosas (IoT) y la demanda de procesamiento en tiempo real, la inteligencia artificial en el borde se ha vuelto cada vez más relevante. En lugar de enviar datos a la nube para su procesamiento, los dispositivos en el borde, como cámaras, sensores o drones, procesan la información en tiempo real utilizando procesadores integrados con capacidades de IA.</p>
+<p>Esto permite aplicaciones como:</p>
+<ul>
+<li>Reconocimiento facial en dispositivos de seguridad.</li>
+<li>Análisis de video en cámaras inteligentes.</li>
+<li>Procesamiento de voz en asistentes virtuales, como Amazon Alexa o Google Assistant.</li>
+</ul>
+<p>La capacidad de realizar estas tareas en el borde reduce la latencia, aumenta la eficiencia energética y mejora la privacidad.</p>
+<p><strong>3. Procesadores de IA en Automóviles Autónomos</strong><br />En el sector automotriz, la IA en los procesadores es crítica para los sistemas de conducción autónoma. Los vehículos autónomos necesitan procesar enormes cantidades de datos en tiempo real provenientes de sensores como cámaras, radares y LIDAR, y tomar decisiones inmediatas para navegar de forma segura.</p>
+<p>NVIDIA es un líder en este campo con su plataforma NVIDIA DRIVE, que utiliza GPUs y NPUs para procesar la información y permitir la conducción autónoma. ARM también tiene presencia en este sector con su arquitectura integrada en procesadores embebidos de automóviles.</p>
+<p><strong>4. IA en Procesadores para Smart Homes y Wearables</strong><br />Los dispositivos de hogares inteligentes y wearables (como relojes inteligentes) están incorporando capacidades de IA para personalizar la experiencia del usuario y mejorar la eficiencia. Los procesadores con IA en estos dispositivos permiten la detección de patrones en los hábitos del usuario, reconocimiento de voz, y monitorización de salud en tiempo real.</p>
+<p>Por ejemplo, procesadores ARM Cortex-M en dispositivos como relojes inteligentes permiten el monitoreo continuo de la actividad física y signos vitales, procesando datos en el dispositivo para ofrecer insights personalizados sin necesidad de conectarse a la nube.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="1511_diferencias_clave_entre_npu_y_tpu.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="153_tendencias_futuras_en_inteligencia_artificial_en_procesadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

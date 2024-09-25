@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.2.1. La memoria | Tema 1 FH </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-2"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 1 FH</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 1. Arquitectura de ordenadores. Estructura funcional</a></li>
+   <li><a href="11_introduccin.html" class="no-ch">1.1. Introducción</a></li>
+   <li class="current-page-parent"><a href="12_arquitectura_de_un_ordenador_elementos_funcionales_y_subsistemas.html" class="current-page-parent daddy">1.2. Arquitectura de un ordenador. Elementos funcionales y subsistemas</a>
+   <ul>
+      <li id="active"><a href="121_la_memoria.html" class="active no-ch">1.2.1. La memoria</a></li>
+      <li><a href="122_subsistema_de_entradasalida.html" class="no-ch">1.2.2. Subsistema de entrada/salida</a></li>
+      <li><a href="123_la_unidad_aritmticolgica_alu.html" class="no-ch">1.2.3. La Unidad Aritmético-Lógica (ALU)</a></li>
+      <li><a href="124_la_unidad_de_control.html" class="no-ch">1.2.4. La Unidad de Control</a></li>
+   </ul>
+   </li>
+   <li><a href="13_los_soc_procesadores_mviles.html" class="daddy">1.3. Los SoC. Procesadores móviles</a>
+   <ul class="other-section">
+      <li><a href="131_procesadores_usados_en_los_soc.html" class="no-ch">1.3.1. Procesadores usados en los SoC</a></li>
+      <li><a href="132_procesadores_arm.html" class="daddy">1.3.2. Procesadores ARM</a>
+      <ul class="other-section">
+         <li><a href="1321_evolucin_de_los_procesadores_arm.html" class="no-ch">1.3.2.1. Evolución de los Procesadores ARM</a></li>
+         <li><a href="1322_aplicaciones_de_los_procesadores_arm.html" class="no-ch">1.3.2.2. Aplicaciones de los Procesadores ARM</a></li>
+         <li><a href="1323_ventajas_y_desventajas_de_los_procesadores_arm.html" class="no-ch">1.3.2.3. Ventajas y Desventajas de los Procesadores ARM</a></li>
+         <li><a href="1324_futuro_de_arm_en_la_computacin.html" class="no-ch">1.3.2.4. Futuro de ARM en la Computación</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="14_nuevas_arquitecturas_de_los_microprocesadores_chips_neuromrficos.html" class="daddy">1.4. Nuevas arquitecturas de los microprocesadores: chips neuromórficos.</a>
+   <ul class="other-section">
+      <li><a href="141_arquitectura_y_funcionalidad.html" class="no-ch">1.4.1. Arquitectura y Funcionalidad</a></li>
+   </ul>
+   </li>
+   <li><a href="15_inteligencia_artificial_en_los_procesadores.html" class="daddy">1.5. Inteligencia artificial en los procesadores</a>
+   <ul class="other-section">
+      <li><a href="151_procesadores_con_capacidades_de_ia.html" class="daddy">1.5.1. Procesadores con Capacidades de IA</a>
+      <ul class="other-section">
+         <li><a href="1511_diferencias_clave_entre_npu_y_tpu.html" class="no-ch">1.5.1.1. Diferencias clave entre NPU y TPU</a></li>
+      </ul>
+      </li>
+      <li><a href="152_implementaciones_de_ia_en_los_procesadores.html" class="no-ch">1.5.2. Implementaciones de IA en los Procesadores</a></li>
+      <li><a href="153_tendencias_futuras_en_inteligencia_artificial_en_procesadores.html" class="no-ch">1.5.3. Tendencias Futuras en Inteligencia Artificial en Procesadores</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="12_arquitectura_de_un_ordenador_elementos_funcionales_y_subsistemas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="122_subsistema_de_entradasalida.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.2.1. La memoria</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id16">
+<div class="iDevice emphasis0" >
+<div id="ta16_136_2" class="block iDevice_content">
+<div class="exe-text"><p>La situación ideal en cualquier equipo informático es la de una única memoria de capacidad infinita, rápida, no volátil y de un coste muy bajo. Es, por tanto, un componente clave que se utiliza para almacenar tanto los datos como las instrucciones que necesita la CPU para ejecutar operaciones. Existen varios tipos de memoria, organizados en una jerarquía que optimiza el acceso a la información:</p>
+<p><img src="memorias.jpg" width="403" height="250" alt="jerarquía mem" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Para entender el concepto de jerarquía de memoria hay que tener en cuenta, tal y como se muestra en el gráfico anterior, que la memoria incrementa el coste cuánto más rápida y más capacidad tiene de tal manera que no es viable fabricar un ordenador con gran capacidad de la memoria más rápida. También hay que tener en cuenta que cuanto mayor es la capacidad de la memoria, más díficil será conseguir que ésta sea rápida.</p>
+<p>Así, cualquier equipo actual posee una cierta cantidad de varios niveles de memoria, empezando por una memoria muy rápida, de pequeña capacidad y de un coste muy elevado, para terminar con una memoria muy lenta, de gran capacidad y de un coste muy bajo, pasando por varios tipos de memoria de características y prestaciones intermedias.</p>
+<p><strong>Memoria Caché:</strong> Es la memoria más cercana al procesador y la más rápida. Se divide en niveles (L1, L2, L3), siendo L1 la más rápida y pequeña. La memoria caché es una memoria de alta velocidad y pequeña capacidad (más lenta que los registros de la CPU pero de mucha más capacidad que éstos). Su utilidad es la de almacenar los datos e instrucciones más utilizados por los programas, puesto que por norma general se tiende a acceder en gran medida a los mismos datos e instrucciones una y otra vez. De esta manera, se evita que el ordenador deba acceder a memoria RAM, que es mucho más lenta que esta memoria. Cada vez que el dato se encuentra en memoria caché se dice que se ha producido un acierto. Esa será entonces la medida a evaluar para saber si una memoria caché es buena. </p>
+<p>Otro aspecto que cabe destacar a la hora de tener en cuenta una memoria caché, es el nivel que ocupa ésta. En ese caso hablamos de memorias caché de nivel 1 (L1, integrada en el procesador), nivel 2 (L2) y nivel 3 (L3), en función de la distancia a la que se encuentran del procesador. De esa manera, cuanto más cerca del procesador más rápida es pero también disminuye su capacidad. En la actualidad, la gran mayoría de procesadores disponen de una memoria caché L2 integrada ya en el procesador junto a una pequeña porción de caché L1 de unos pocos KBs y no se dispone de memoria de nivel 3 <br /><strong></strong></p>
+<p><strong>Memoria RAM (Memoria de Acceso Aleatorio): </strong>La memoria principal, también conocida como memoria RAM, está directamente conectada a la CPU a través de un bus de direcciones y un bus de datos. Debe estar presente para que ésta funcione puesto que contendrá, en todo momento, los programas o procesos en ejecución y los datos con los que se opera.</p>
+<p>Es un tipo de memoria de lo que se conoce como acceso aleatorio, denominación que surge para diferenciarlas de las memorias de acceso secuencial, donde el acceso a un dato pasaba por acceder primero a todos los datos que estaban situados por delante de éste (cinta de datos). Con las memorias de acceso aleatorio es posible acceder directamente a cualquier dato, sin tener que pasar antes por ningún otro.</p>
+<p>Hay que tener en cuenta también que es una memoria volátil, por lo que en ausencia de alimentación perderá su información.</p>
+<p>Es una memoria de mucha más capacidad que la memoria caché pero bastante más lenta que ésta. Por el contrario, es mucho más rápida que la memoria secundaria, pero también de menor capacidad y de un coste superior.</p>
+<p>La memoria principal se puede ver como un conjunto de celdas donde cada una de estas celdas se identifica con una dirección diferente para que el procesador pueda direccionarlas. Así, como se ha comentado anteriormente son necesarios dos buses para comunicarse con la memoria principal:</p>
+<ul>
+<li><strong>Bus de direcciones:</strong> Que permite direccionar o seleccionar que celda de la memoria principal se leerá/escribirá en la siguiente operación. Dependiendo del tamaño de este bus de direcciones, el procesador podrá direccionar más o menos de esas celdas de memoria</li>
+<li><strong>Bus de datos:</strong> Que permite que el dato que se escribe/lee viaje de la CPU a la memoria principal. Dependiendo del tamaño de este bus, se permitirá transferir datos de mayor o menor tamaño al mismo tiempo</li>
+</ul>
+<p><strong>Memoria ROM (Memoria de Solo Lectura):</strong> Almacena el firmware del sistema. Es una memoria no volátil, lo que significa que conserva los datos incluso cuando el sistema está apagado.<br /><strong>Memoria Secundaria:</strong> Como discos duros (HDD) y unidades de estado sólido (SSD), estas almacenan grandes cantidades de datos a largo plazo, pero son mucho más lentas en comparación con la RAM y la caché.</p>
+<p>La memoria secundaria se caracteriza, principalmente, por ser de gran capacidad y no volátil. Cuando se habla de memoria secundaria se hace referencia al disco duro puesto que es el dispositivo más común que se utiliza como almacenamiento secundario y, hoy en día, se ha convertido en un elemento indispensable en un ordenador.</p>
+<p>Por otro lado, y debido principalmente al encarecimiento de la memoria principal, existen algunos mecanismos muy extendidos que permiten al Sistema Operativo hacer funcionar la memoria secundaria (que es barata) como si fuera memoria principal. Es lo que se conoce como memoria virtual (swap) y ReadyBoost, que aunque no son elementos hardware merece la pena mencionarlos aquí puesto que están muy relacionados con los elementos de memoria de un sistema.</p>
+<p><img src="swap.jpg" width="361" height="556" alt="mem sec" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="readyboost.jpg" width="425" height="441" alt="cpu mem secondary" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id7">
+<div class="iDevice emphasis0" >
+<div id="ta7_127_2" class="block iDevice_content">
+<div class="exe-text"><p>La memoria también se denominada RAM (Random Access Memory, en inglés, o memoria de acceso aleatorio, en castellano), que consiste en una serie de celdas (cada una contiene una serie de bits o celdillas). Cada bit en la celda tendrá almacenado alguno de estos valores: 0, 1 o nada. Generalmente, en cada celda hay un byte (1 byte = 8 bits).</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DestacadofpdIdevice" id="id8">
+<div class="iDevice emphasis0" >
+<div class="iDevice_destacadofpd">
+<div id="ta8_167" class="block iDevice_content">
+<p><strong>Recuerda:</strong></p>
+<p>✓ 1 celda = 1 byte.<br />✓ 1 celdilla = 1 biestable = 1 bit.<br />✓ 1 byte = 8 bits.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id9">
+<div class="iDevice emphasis0" >
+<div id="ta9_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Todas estas celdas tienen una dirección determinada. La unidad mínima de la memoria es la celda, la cual podrá leerse o escribirse de forma completa.<br />El tiempo que tarda el sistema en leer o escribir en las celdas es el mismo para cualquiera de ellas. Como se ha dicho, los programas son una serie de instrucciones que se ejecutan en el procesador y que, para ejecutarse, tienen que estar en memoria. También los datos de estos programas deberán estar en memoria.<br />Si se mira la figura siguiente, puede verse que cada celda de memoria ocupará 1 byte.<br />La memoria tiene una serie de celdas 0, 1, 2N-1, las cuales tienen una dirección en binario. Si dicho sistema utiliza dos bytes (16 bits) para direccionar la memoria, la celda 1 se expresará en binario así: 0000000000000001. Cuando se necesite acceder a la celda 1, se tendrá que indicar al sistema que se quiere acceder a la<br />celda 0000000000000001.</p>
+<p><img src="imagen.3.png" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Por lo tanto, podrán tenerse, como mucho, 2N celdas, lo que implica que se puede tener desde la celda 0000000000000000 a la celda 1111111111111111.<br />Ha de tenerse en cuenta que hay que distinguir entre la dirección de celda de una memoria y su contenido:<br /><strong>1. Dirección de una celda de memoria.</strong> La dirección se expresa con un número binario (dos bytes) e indica en qué lugar de memoria se encuentran los datos.<br /><strong>2. Contenido de una celda de memoria.</strong> La dirección de memoria tiene un contenido (en el ejemplo, 1 byte/8 bits).</p>
+<p>Ha de tenerse también en cuenta que dependiendo del número de bits que se utilicen para direccionar una celda de memoria, la capacidad de memoria será mayor o menor.<br />Con una dirección de memoria de N bits, podrá tenerse un espacio de direcciones de 2N direcciones (de la 0 a la 2N-1).</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice em_iDevice_parasabermasfpd" id="id10">
+<div class="iDevice emphasis_parasabermasfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Para saber más</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_144" class="block iDevice_content">
+<p>El tiempo de acceso a la memoria es el tiempo que tarda la memoria en hacer una operación de lectura o escritura. Se suele medir en nanosegundos. Un nanosegundo es la milmillonésima parte de un segundo.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id11">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Qué operaciones se pueden realizar con la memoria</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_131_2" class="block iDevice_content">
+<div class="exe-text"><ol>
+<li><strong>Lectura (dirección)</strong>. Leer de una dirección de memoria equivale a obtener el contenido de una celda concreta. La lectura no modifica el valor de la celda el cual permanece inalterado.</li>
+<li><strong>Almacenar (dirección, valor)</strong>. Escribir en una dirección de memoria equivale a volcar el contenido de un registro en una celda concreta. La escritura modifica el valor de la celda.</li>
+</ol>
+<p>Por lo tanto, a la memoria se le enviará una señal de lectura o escritura, y se tendrá que tener un registro de direcciones y un registro de datos.</p>
+<p><img src="imagen.4.png" width="961" height="703" alt="lectura, escritura" /></p>
+<p>A continuación puede verse, paso a paso, cómo funcionan las operaciones de lectura y escritura:<br /><strong>Operación de lectura (dirección):</strong><br />➢ Se carga la dirección en el registro de direcciones.<br />➢ Se decodifica la dirección (se localiza la celda de memoria en cuestión).<br />➢ Se copia el contenido de la celda de memoria en el registro de datos.</p>
+<p><strong>Operación de escritura (dirección, valor):</strong><br />➢ Se carga la dirección en el registro de direcciones.<br />➢ Se carga el valor o dato que se quiere escribir en el registro de datos.<br />➢ Se decodifica la dirección (se localiza la celda de memoria en cuestión).<br />➢ Se copia el contenido del registro de datos en la celda de memoria seleccionada.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="12_arquitectura_de_un_ordenador_elementos_funcionales_y_subsistemas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="122_subsistema_de_entradasalida.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>
